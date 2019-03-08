@@ -1,0 +1,15 @@
+<% include ../layouts/header %>
+
+<form method="POST" >
+  
+  First name:<br>
+  <input type="text" name="name" value="<%= users.name %> " >
+  <br>
+  Age:<br>
+  <input type="text" name="age" value="<%= users.age %> ">
+  <br><br>
+ 
+  <input type="submit" value="Submit"  onclick="redirectToList();" >
+  
+</form> 
+<% include ../layouts/footer %>
